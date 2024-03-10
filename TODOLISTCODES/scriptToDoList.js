@@ -41,9 +41,9 @@ function updateTaskList() {
   tasks.forEach((task, index) => {
     const li = document.createElement('li');
     li.innerHTML =`
-      <span style='background-color: #78bfd9;'>${task}</span>
+      <span style='background-color: white'><b>${task}</b></span>
       <button onclick="completeTask(${index})" style='background-color:green;'> Complete</button>
-      <button onclick="deleteTask(${index})" style='background-color:red;'>Delete</button>
+      <button onclick="deleteTask(${index})" style='background-color:black;'>Delete</button>
     `;
     taskList.appendChild(li);
   });
